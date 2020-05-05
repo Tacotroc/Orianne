@@ -1,0 +1,303 @@
+main {
+  section#allBrands {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    @media (max-width: 851px) {
+      margin: auto;
+      width: 100%;
+    }
+    article#BrandsByLetters {
+      width: 100%;
+      h1 {
+        color: #173d2c;
+        font-family: Raleway;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36px;
+        margin-bottom: 0;
+      }
+
+      p {
+        color: #2b2b2b;
+        font-family: Raleway;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-top: 0;
+        @media (max-width: 851px) {
+          text-align: center;
+          width: 100%;
+        }
+      }
+
+      p#letters {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-evenly;
+        @media (max-width: 851px) {
+          text-align: center;
+          width: 100%;
+        }
+        a {
+          text-decoration: none;
+          color: #1b253a;
+          font-family: Raleway;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 22px;
+          text-transform: uppercase;
+          span.letterSpan {
+            padding: 5px;
+          }
+
+          &:hover {
+            background-color: lightgrey;
+          }
+        }
+      }
+
+      h2 {
+        color: #1b253a;
+        font-family: Raleway;
+        font-size: 25px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+
+        a {
+          text-decoration: none;
+          color: #1b253a;
+          font-family: Raleway;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 25px;
+        }
+      }
+
+      div.flexUl {
+        display: flex;
+        flex-flow: wrap;
+
+        ul {
+          width: 30%;
+
+          @media (max-width: 850px) {
+            width: 50%;
+          }
+
+          a:hover {
+            text-decoration: underline !important;
+            background-color: #f1c129;
+          }
+
+          span {
+            padding-right: 15px;
+          }
+        }
+      }
+
+      @media (max-width: 850px) {
+        width: 100%;
+      }
+    }
+
+    article.filterResults {
+      width: 35%;
+
+      p.filterhr {
+        color: #2b2b2b;
+        font-family: Raleway;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        display: flex;
+        margin-top: 100px;
+
+        img.hr {
+          margin: auto;
+          width: 70%;
+        }
+
+        @media (max-width: 851px) {
+          display: none;
+        }
+      }
+
+      p.filterp {
+        text-align: right;
+        color: #94979b;
+        font-family: Raleway;
+        font-size: 14px;
+        font-weight: 400;
+        width: 90%;
+        margin-left: 10%;
+      }
+
+      p.ultitle {
+        width: 90%;
+        margin-left: 10%;
+        display: flex;
+        justify-content: space-between;
+        color: #1b253a;
+        font-family: Raleway;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        @media (max-width: 851px) {
+          width: 100%;
+          margin-left: 0;
+        }
+      }
+
+      ul.activeUl {
+        display: block !important;
+        list-style-type: none;
+        padding-left: 0;
+        width: 90%;
+        margin-left: 10%;
+
+        li {
+          color: #1b253a;
+          font-family: Raleway;
+          font-size: 16px;
+          font-weight: 400;
+          margin-top: 15px;
+          input[type="checkbox"] {
+            display: none;
+          }
+
+          input[type="checkbox"] + label:before {
+            background: #fff;
+            border: 2px solid #000;
+            margin-top: -3px;
+            margin-right: 6px;
+            display: inline-block;
+            vertical-align: middle;
+            content: "";
+            width: 17px;
+            height: 17px;
+            cursor: pointer;
+          }
+
+          input[type="checkbox"]:checked + label:before {
+            border-color: #173d2c;
+            background-image: url("../images/img_research/check.png");
+          }
+        }
+
+        li:last-of-type {
+          margin-bottom: 35px;
+        }
+      }
+
+      @media (max-width: 851px) {
+        width: 100%;
+        display: none;
+      }
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 2em;
+      right: 50%;
+      text-decoration: none;
+      color: #000000;
+      font-size: 12px;
+      padding: 1em;
+      display: none;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      img#back {
+        width: 60px;
+        opacity: 0.2;
+        filter: alpha(opacity=20);
+        transition: all 0.4s ease-out;
+        -o-transition: all 0.5s ease-out;
+        -moz-transition: all 0.4s ease-out;
+        -webkit-transition: all 0.4s ease-out;
+
+        &:hover {
+          text-decoration: none;
+          opacity: 0.9;
+        }
+      }
+
+      @media (max-width: 850px) {
+        bottom: 4em;
+        right: 0%;
+        opacity: 0.5;
+      }
+    }
+
+    @media (max-width: 851px) {
+      flex-direction: column-reverse;
+      width: 90%;
+    }
+  }
+  section#imageAjoutee {
+    margin-top: 56px;
+    display: flex;
+    flex-direction: row;
+    position: -webkit-sticky;
+    position: sticky;
+    width: 40%;
+    height: 25%;
+    top: 40px;
+    @media (max-width: 851px) {
+      display: none;
+    }
+    #img1marque {
+      width: 55%;
+      height: 55%;
+      margin-top: 10px;
+      margin-right: 10%;
+      margin-left: 10%;
+      box-shadow: 1px 1px 4px black;
+      @media (max-width: 851px) {
+        display: none;
+      }
+    }
+    #img1bismarque {
+      width: 55%;
+      height: 55%;
+      margin-top: 10px;
+      margin-right: 10%;
+      margin-left: 10%;
+      box-shadow: 1px 1px 4px black;
+      @media (max-width: 851px) {
+        display: none;
+      }
+    }
+    #img2marque {
+      width: 85%;
+      height: 75%;
+      margin-top: 10px;
+      margin-right: 10%;
+      margin-left: 10%;
+      box-shadow: 1px 1px 4px black;
+      @media (max-width: 851px) {
+        display: none;
+      }
+    }
+  }
+  div#flex_position {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}

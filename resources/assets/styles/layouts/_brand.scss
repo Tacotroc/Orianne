@@ -1,0 +1,533 @@
+main {
+  @media (max-width: 768px) {
+    margin-top: 15% !important;
+  }
+
+  p.path {
+    width: 70%;
+    margin: auto;
+    color: #b0b0b1;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+
+    span.pathImg {
+      margin: auto 5px;
+    }
+
+    span.pathelt {
+      color: #173d2c !important;
+      font-family: "Raleway", sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 21px;
+    }
+  }
+
+  section#peugeotSection {
+    width: 70%;
+    margin: auto;
+
+    div#presentation {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      div#peugeotContent {
+        width: 30%;
+
+        h2 {
+          color: #212b36;
+          font-family: "Raleway", sans-serif;
+          font-size: 31px;
+          font-weight: 700;
+          line-height: 28px;
+        }
+
+        p {
+          color: #212b36;
+          font-family: "Raleway", sans-serif;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+        }
+
+        @media (max-width: 1024px) {
+          width: 100%;
+        }
+      }
+
+      div#peugeotPicture {
+        width: 65%;
+        text-align: right;
+
+        img {
+          //max-height: 368px;
+          max-width: 800px;
+
+          @media (max-width: 1024px) {
+            width: 80%;
+          }
+          @media (max-width: 768px) {
+            width: 100%;
+          }
+        }
+
+        @media (max-width: 1024px) {
+          width: 100%;
+          text-align: center;
+        }
+      }
+
+      @media (max-width: 1024px) {
+        display: block;
+      }
+    }
+
+    div#models {
+      h2 {
+        color: #173d2c;
+        font-family: "Raleway", sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+      }
+
+      div#modelsContainer {
+        display: flex;
+        flex-wrap: wrap;
+
+        a.model {
+          text-decoration: none;
+          display: flex;
+          margin-right: 1%;
+          margin-top: 15px;
+          width: 24%;
+          box-shadow: 0 2px 8px #efefef;
+          border-radius: 3px;
+          border: 1px solid #e5e5e5;
+          background-color: #ffffff;
+          cursor: pointer;
+
+          div.modelpicture {
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #d8d8d8;
+
+            img {
+              width: 80%;
+              padding: 5px;
+              margin: auto;
+            }
+          }
+
+          div.modelnumber {
+            width: 60%;
+            color: #484848;
+            font-family: "Raleway", sans-serif;
+            font-size: 17px;
+            font-weight: 700;
+            display: flex;
+
+            p {
+              margin: auto;
+              width: 50%;
+            }
+          }
+
+          div.modelnumber:hover {
+            background-color: #f1c129;
+          }
+
+          @media (max-width: 1024px) {
+            width: 100%;
+            min-height: 175px;
+          }
+
+          //@media (max-width: 425px) {
+          //  width: 32%;
+          //}
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      width: 90%;
+    }
+  }
+
+  section#Offers {
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+
+    div#recentOffers {
+      width: 65%;
+
+      p#menuOffer {
+        width: 100%;
+        border-bottom: 1px solid #d4d4d4;
+        padding: 10px 0;
+
+        a {
+          text-decoration: none;
+
+          span {
+            color: #a4a4ac;
+            font-family: "Raleway", sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            margin-right: 5%;
+            padding: 10px 0;
+          }
+
+          span#activeOffer {
+            color: #352031;
+            font-family: "Raleway", sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            border-bottom: 1px solid black;
+          }
+        }
+      }
+
+      h2 {
+        color: #173d2c;
+        font-family: "Raleway", sans-serif;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36px;
+      }
+
+      article.offers {
+        width: 100%;
+
+        h2 {
+          display: flex;
+          justify-content: space-between;
+          color: #173d2c;
+          font-family: "Raleway", sans-serif;
+          font-size: 28px;
+          font-weight: 700;
+          line-height: 36px;
+
+          a {
+            text-decoration: none;
+
+            span {
+              color: #173d2c;
+              font-family: "Raleway", sans-serif;
+              font-size: 14px;
+              font-weight: 700;
+              line-height: 18px;
+            }
+          }
+
+          @media (max-width: 1200px) {
+            font-size: 20px;
+          }
+        }
+
+        div.offersContainer {
+          hr {
+            border: 1px solid #dbdbdb;
+          }
+
+          div.offer {
+            padding: 30px 10px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            border: 1px solid #fff;
+
+            div.offerPicture {
+              margin-right: 2%;
+              height: 108px;
+              width: 142px;
+              background-size: cover;
+              background-position: center;
+            }
+
+            div.offerContent {
+              position: relative;
+              width: 80%;
+
+              h3,
+              h4,
+              p {
+                margin-top: 0;
+                margin-bottom: 0;
+              }
+
+              h3 {
+                width: 100%;
+                padding-bottom: 10px;
+                color: #a9a9a9;
+                font-family: "Raleway", sans-serif;
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 18px;
+                text-transform: uppercase;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                span.price {
+                  color: #edc852;
+                  font-family: "Raleway", sans-serif;
+                  font-size: 20px;
+                  font-weight: 700;
+                  line-height: 28px;
+                }
+              }
+
+              h4 {
+                width: 100%;
+                color: #173d2c;
+                font-family: "Raleway", sans-serif;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 28px;
+                margin-top: -12px;
+              }
+
+              p:first-of-type {
+                color: #212b36;
+                font-family: "Raleway", sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+              }
+
+              p.location {
+                width: 60%;
+                color: #3e3e3e;
+                font-family: "Raleway", sans-serif;
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 18px;
+                display: flex;
+                justify-content: space-between;
+                bottom: 0;
+                margin-top: 5px;
+
+                span.date {
+                  color: #848484;
+                }
+
+                @media (max-width: 1280px) {
+                  position: relative;
+                }
+              }
+
+              @media (max-width: 425px) {
+                width: 100%;
+              }
+            }
+
+            @media (max-width: 1280px) {
+              display: block;
+            }
+            @media (max-width: 1023px) {
+              display: flex;
+            }
+            @media (max-width: 425px) {
+              display: block;
+            }
+          }
+
+          div.offer:hover {
+            box-shadow: 0 2px 16px #ececec;
+            border-radius: 5px;
+            border: 1px solid #dbdbdb;
+            background-color: #ffffff;
+            cursor: pointer;
+            padding: 30px 10px;
+          }
+
+          div.switchers {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            a {
+              text-decoration: none;
+              color: #333333;
+
+              div.num {
+                width: 48px;
+                height: 48px;
+                border-radius: 4px;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                color: #333333;
+                font-family: "Raleway", sans-serif;
+                font-size: 14px;
+                font-weight: 500;
+                @media (max-width: 1024px) {
+                  width: 28px;
+                  height: 28px;
+                }
+                @media (max-width: 825px) {
+                  width: 48px;
+                  height: 48px;
+                }
+                @media (max-width: 425px) {
+                  width: 28px;
+                  height: 28px;
+                }
+              }
+
+              div.rect {
+                text-decoration: none;
+                color: #333333;
+                font-family: "Raleway", sans-serif;
+                font-size: 14px;
+                font-weight: 500;
+                width: 98px;
+                height: 48px;
+                border-radius: 4px;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                display: flex;
+                cursor: pointer;
+
+                img {
+                  margin: auto;
+                }
+
+                @media (max-width: 1024px) {
+                  width: 59px;
+                  height: 28px;
+                }
+                @media (max-width: 825px) {
+                  width: 98px;
+                  height: 48px;
+                }
+                @media (max-width: 425px) {
+                  width: 59px;
+                  height: 28px;
+                }
+              }
+            }
+
+            .num:hover {
+              background-color: #183e2d;
+              color: #fff;
+            }
+
+            #active {
+              background-color: #183e2d;
+              color: #fff;
+            }
+          }
+        }
+
+        @media (max-width: 1023px) {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 1024px) {
+        width: 100%;
+      }
+    }
+
+    div#clubs {
+      width: 30%;
+
+      p#clubTitle {
+        padding: 37px 0;
+        text-align: right;
+        display: flex;
+        color: #2b2b2b;
+        font-family: "Raleway", sans-serif;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+
+        img {
+          margin: auto;
+          width: 70%;
+        }
+
+        @media (max-width: 1024px) {
+          width: 100%;
+        }
+      }
+
+      a {
+        text-decoration: none;
+
+        div#club {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          cursor: pointer;
+          text-decoration: none;
+          width: 100%;
+
+          div#contentClub {
+            width: 90%;
+            text-align: right;
+            margin-right: 5%;
+
+            h2 {
+              color: #000000;
+              font-family: "Raleway", sans-serif;
+              font-size: 16px;
+              font-weight: 400;
+              text-transform: uppercase;
+            }
+
+            p {
+              color: rgba(0, 0, 0, 0.6);
+              font-family: "Raleway", sans-serif;
+              font-size: 12px;
+              font-weight: 400;
+              letter-spacing: 1px;
+              text-transform: uppercase;
+            }
+          }
+
+          div#logoClub {
+            img#cvclub,
+            img#autopassion {
+              width: 100px;
+              height: 100px;
+            }
+          }
+        }
+
+        @media (max-width: 1024px) {
+          width: 30%;
+        }
+        @media (max-width: 425px) {
+          width: 100%;
+          flex-direction: row-reverse;
+        }
+      }
+
+      @media (max-width: 1024px) {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      display: block;
+    }
+    @media (max-width: 768px) {
+      width: 90%;
+    }
+  }
+}

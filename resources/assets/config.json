@@ -1,0 +1,14 @@
+{
+  "entry": {
+    "main": [
+      "./scripts/main.js",
+      "./scripts/customizer.js",
+      "./styles/main.scss"
+    ]
+  },
+  "publicPath": "/wp-content/themes/tacotroc",
+  "devUrl": "http://tacotroc.net",
+  "proxyUrl": "http://localhost:3002",
+  "cacheBusting": "[name]_[hash:8]",
+  "watch": ["app/**/*.php", "config/**/*.php", "resources/views/**/*.php"]
+}
