@@ -180,7 +180,7 @@ function fetch_models()
 
     $request = $_GET['q'];
 
-    $query = 'SELECT ID as id, post_title as text FROM wp_posts WHERE wp_posts.`post_type` = "modeles" AND post_name like "' . $request . '%" AND post_status = "publish"';
+    $query = 'SELECT ID as id, post_title as text FROM wp_posts WHERE wp_posts.`post_type` = "modeles" AND post_name like "' . $request . '%" AND post_status = "publish" ORDER BY text ASC';
     $models = $wpdb->get_results($query);
     $models[] = array("id" => 0, "text" => "Autre");
 
@@ -195,7 +195,7 @@ function fetch_brands()
     global $wpdb;
 
     $request = $_GET['q'];
-    $query = 'SELECT ID as id, post_title as text FROM wp_posts WHERE wp_posts.`post_type` = "marques" AND post_name like "' . $request . '%" AND post_status = "publish"';
+    $query = 'SELECT ID as id, post_title as text FROM wp_posts WHERE wp_posts.`post_type` = "marques" AND post_name like "' . $request . '%" AND post_status = "publish" ORDER BY text ASC';
     $models = $wpdb->get_results($query);
 
     echo json_encode(["results" => $models]);

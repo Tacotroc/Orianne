@@ -153,10 +153,10 @@
             <p>
               <select id="subsubcategory" class="subsubcategory" name="subsubcategory" required></select>
             </p>
-            <p><label for="brand" class="labelSelect">Marques*</label></p>
+            <!--<p><label for="brand" class="labelSelect">Marques*</label></p>
             <p>
             <select style="width: 50%" class="js-brands-ajax" name="brand" ></select>
-            </p>
+            </p>-->
             <p>
               <label for="model" class="labelSelect">Modèle</label>
             </p>
