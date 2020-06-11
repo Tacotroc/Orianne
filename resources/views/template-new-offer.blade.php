@@ -137,6 +137,7 @@
             <p><input type="radio" name="announcementType" id="type1" value="offre" /><label for="type1">Offre (vous vendez une pièce détachée)</label></p>
             <p><input type="radio" name="announcementType" id="type2" value="demande" /><label for="type2">Demande (vous recherchez une pièce détachée)</label></p>
             <p><input type="radio" name="announcementType" id="type3" value="echange" /><label for="type3">Échange ou don (vous échangez ou donnez une pièce détachée)</label></p>
+
             <p><label for="category" class="labelSelect">Catégorie*</label></p>
             <p>
                 <select id="category" name="category" required></select>

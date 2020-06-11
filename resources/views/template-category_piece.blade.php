@@ -47,13 +47,24 @@
           ?>
           <a href="<?= get_permalink($offer->ID) ?>" class="clean">
             <div class="offer">
-                <div class="offerPicture" style="background-image: url(<?= $image["url"]; ?>)"></div>
-                <div class="offerContent">
-                    <h3 class="brand"><?= isset($model[0]->post_title) ? $model[0]->post_title : "Marque inconnue" ?><span class="price"><?= get_field("prix", $offer->ID); ?><?= !empty(get_field("prix", $offer->ID)) ? "€ " : "" ?></span></h3>
-                    <h4><?= get_the_title($offer->ID); ?></h4>
-                    <p class="description"><?= helper_description(get_field("description", $offer->ID)); ?></p>
-                    <p class="location"><?= get_field("city", $offer->ID); ?><span class="date">Publiée le <?=  date('d/m/y', strtotime($post->post_date))?></span></p>
-                </div>
+              <div class="offerPicture" style="background-image: url(<?= $image["url"]; ?>)"></div>
+              <div class="offerContent">
+                  <h3 class="brand">
+                    <span class="model">
+                    <?= isset($model[0]->post_title) ? $model[0]->post_title : "Marque inconnue" ?>
+                    <?php if (empty($model[1])) {
+                    echo '';
+                    } elseif ($model = substr($model[1]->post_title, 0, 20)) {
+                      echo $model . "..." ;
+                    }
+                    ?>
+                    </span>
+                    <span class="price"><?= get_field("prix", $offer->ID); ?><?= !empty(get_field("prix", $offer->ID)) ? "€ " : "" ?></span>
+                  </h3>
+                  <h4><?= get_the_title($offer->ID); ?></h4>
+                  <p class="description"><?= helper_description(get_field("description", $offer->ID)); ?></p>
+                  <p class="location"><?= get_field("city", $offer->ID); ?><span class="date">Publiée le <?=  date('d/m/y', strtotime($post->post_date))?></span></p>
+              </div>
             </div>
           </a>
           <hr>
